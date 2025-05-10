@@ -585,7 +585,7 @@ function lastPayment(){
     paymentAddressEle.innerHTML = address[0].finalAddress;
     paymentShipmentEle.innerHTML = paymentMethod[0].method;
     paymentSubtotalEle.innerHTML = `$${amount[0].subtotal}`;
-    paymentTotalEle.innerHTML = `$${amount[0].total}`
+    paymentTotalEle.innerHTML = `$${(amount[0].total).toFixed(2)}`
 }
 
 
