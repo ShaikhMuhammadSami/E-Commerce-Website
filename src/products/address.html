@@ -1,0 +1,167 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Address</title>
+  <link href="../output.css" rel="stylesheet">
+  <link rel="stylesheet" href="../global.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+</head>
+<body class="m-0 p-0">
+  <!-- NavBar started -->
+  <header class="bg-white w-full">
+    <div class=" flex justify-between items-center h-[85px] w-[90%] m-auto md:w-[85%] md:justify-between md:h-[90px] xl:justify-evenly xl:w-[85%]">
+      <img src="images/Logo.png" alt="website logo">
+  
+      <!-- Navbar List for mobile Start-->
+      <nav id="nav-list" class="fixed top-0 right-[-100%] w-[60%] bg-linear-to-b from-[#47437b] to-[#27212b] h-screen z-50 md:hidden">
+        <ul class="flex flex-col justify-center mt-2">
+          <i class='bx bx-x text-4xl cursor-pointer pl-10 text-white' onclick="closeMenu()"></i>
+          <li class="pb-7 pt-7 pl-10"><a class="text-[20px] text-white" href="products.html">Home</a></li>
+          <li class="pb-7 pt-7 pl-10"><a class="text-[20px] text-white" href="cart.html">Cart</a></li>
+          <li class="pb-7 pt-7 pl-10"><a class="text-[20px] text-white" href="#">Contact Us</a></li>
+          <li class="pb-7 pt-7 pl-10"><a class="text-[20px] text-white" href="#">Blog</a></li>
+        </ul>
+      </nav>
+
+      <div class="md:hidden">
+        <i id="menu-btn" class='bx bx-menu text-4xl cursor-pointer ' onclick="openMenu()"></i>
+      </div>
+      <!-- Navbar List for mobile End -->
+
+      <!-- Navbar List for larger Screens Starts -->
+      <div class="hidden md:block w-[35%] lg:w-[38%]">
+        <div class="flex items-center bg-gray-100 p-2 gap-2 rounded-[10px]">
+          <i class='bx bx-search text-2xl'></i>
+          <input class="w-full p-2 outline-none" type="search" placeholder="Search">
+        </div>
+      </div>
+      <nav class="hidden md:block">
+        <ul class="flex items-center gap-3 lg:gap-7">
+          <li><a href="products.html">Home</a></li>
+          <li><a href="#" class="text-gray-400">About</a></li>
+          <li><a href="#" class="text-gray-400">Contact Us</a></li>
+          <li><a href="#" class="text-gray-400">Blog</a></li>
+        </ul>
+      </nav>
+      <div class="hidden md:block">
+        <a href=""><i class='bx bx-heart text-2xl xl:text-3xl text-gray-700 lg:mr-3'></i></a>
+        <i class='bx bx-cart-alt text-2xl xl:text-3xl text-gray-700 lg:mr-3' ></i>
+        <a href="products.html"><i class='bx bx-user text-2xl xl:text-3xl text-gray-700'></i></a>
+      </div>
+    </div> 
+    <!-- Navbar List for larger Screens Ends -->
+
+
+    <!-- Second Navbar for larger Screens started -->
+    <nav class="hidden md:block h-12 bg-[#2e2e2e]">
+      <ul class="w-[85%] m-auto flex justify-between items-center lg:w-[77%]">
+        <li class="text-[#98989c] flex items-center gap-2 h-12 cursor-pointer lg:text-[18px]"><i class='bx bxs-mobile'></i><p>phones</p></li>
+        <li class="text-[#98989c] flex items-center gap-2 h-12 cursor-pointer lg:text-[18px]"><i class='bx bx-desktop'></i><p>Comuters</p></li>
+        <li class="text-[#98989c] flex items-center gap-2 h-12 cursor-pointer lg:text-[18px]"><i class='bx bxs-watch-alt'></i><p>Smart Watches</p></li>
+        <li class="text-[#98989c] flex items-center gap-2 h-12 cursor-pointer lg:text-[18px]"><i class='bx bx-camera'></i><p>Cameras</p></li>
+        <li class="text-[#98989c] flex items-center gap-2 h-12 cursor-pointer lg:text-[18px]"><i class='bx bx-headphone'></i><p>HeadPhones</p></li>
+        <li class="text-[#98989c] flex items-center gap-2 h-12 cursor-pointer lg:text-[18px]"><i class='bx bx-joystick'></i><p>Gaming</p></li>
+      </ul>
+    </nav>
+    <!-- Second Navbar for larger Screens End -->
+  </header>
+  <!-- NavBar End -->
+
+
+    <section class="w-[90%] m-auto mt-10 md:mt-16 md:w-[75%]">
+        <div class="flex flex-wrap justify-between items-center mb-10 md:mb-24">
+            <div class="flex items-center gap-2">
+                <img src="images/Location.png" alt="location"/>
+                <div>
+                    <p>Step 1</p>
+                    <p class="font-bold text-[20px] md:text-2xl">Address</p>
+                </div>
+            </div>
+            <div class="flex items-center gap-2 opacity-20">
+                <img src="images/Shipping.png" alt="shipping"/>
+                <div>
+                    <p>Step 2</p>
+                    <p class="font-bold text-[20px] md:text-2xl">Shipping</p>
+                </div>
+            </div>
+            <div class="hidden md:block">
+                <div class="flex items-center gap-2 opacity-20">
+                    <img src="images/Payment.png" alt="payment"/>
+                    <div>
+                        <p>Step 3</p>
+                        <p class="font-bold text-[20px] md:text-2xl">Payment</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="font-semibold mb-5 text-[18px]">Select Address</p>
+        <div class=" bg-[#F6F6F6]">
+            <div class="p-5">
+                <div class="mb-5">
+                    <input type="radio" class="js-address-radioBtn" id="address-checkbox"/>
+                    <input class="w-[90%] outline-none js-main-address font-semibold pl-1" type="text" placeholder="Enter main location"/>
+                </div>
+                <div class="flex justify-between items-center">
+                    <textarea
+                    class="w-[90%] outline-none min-h-[10vh] js-address"
+                    name="user-address"
+                    placeholder="Enter your full address"
+                    ></textarea>
+                    <i class='bx bx-x text-2xl' onclick="removeText()"></i>
+                </div>
+            </div>
+        </div>
+        <div class="w-full flex justify-center gap-5 mt-10 sm:justify-end">
+            <a href="cart.html"><button class="border border-black w-[120px] md:w-[150px] py-2 md:py-3 hover:bg-black hover:text-white transition duration-300 rounded-[6px]">Back</button></a>
+            <button class="border border-black w-[120px] md:w-[150px] py-2 md:py-3 bg-black text-white transition duration-300 rounded-[6px]" onclick="addressFunc()">Next</button>
+        </div>
+    </section>
+
+  
+  <!------------------------------  Footer Section Sarts ---------------------------- -->
+  <section class="bg-[#000000] py-16 lg:py-28 mt-20">
+    <div class="w-[90%] md:w-[80%] xl:w-[75%] m-auto grid grid-cols-1 justify-items-center md:grid-cols-3 gap-10">
+      <div class="text-center flex flex-col justify-center items-center md:items-start md:justify-start md:pt-1.5 md:text-start">
+        <img class="mb-5" src="images/footer-logo.png" alt="Logo image">
+        <p class="text-[#dfdfdf]">We are a residential interior design firm located in Portland. Our boutique-studio offers more than</p>
+      </div>
+      <div class="text-center md:text-start">
+        <ul class="text-white text-sm/9">
+          <li><a class="text-white text-[18px] font-bold" href="#">Services</a></li>
+          <li><a class="text-[#CFCFCF]" href="#">Bonus program</a></li>
+          <li><a class="text-[#CFCFCF]" href="#">Gift cars</a></li>
+          <li><a class="text-[#CFCFCF]" href="#">Credit and payment</a></li>
+          <li><a class="text-[#CFCFCF]" href="#">Service contracts</a></li>
+          <li><a class="text-[#CFCFCF]" href="#">No-cash account</a></li>
+          <li><a class="text-[#CFCFCF]" href="#">Payment</a></li>
+        </ul>
+      </div>
+      <div class="text-center md:text-start">
+        <ul class="text-white text-sm/9">
+          <li><a class="text-white text-[16px] font-bold" href="#">Assistance to the buyer</a></li>
+          <li><a class="text-[#CFCFCF]" href="#">Find an order</a></li>
+          <li><a class="text-[#CFCFCF]" href="#">Terms of delivery</a></li>
+          <li><a class="text-[#CFCFCF]" href="#">Exchange and return of goods</a></li>
+          <li><a class="text-[#CFCFCF]" href="#">Guarantee</a></li>
+          <li><a class="text-[#CFCFCF]" href="#">Frequently asked questions</a></li>
+          <li><a class="text-[#CFCFCF]" href="#">Terms of use of the site</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="w-[90%] m-auto md:w-[80%] xl:w-[75%] text-white mt-5 flex justify-center items-center md: gap-5 text-2xl md:justify-start">
+      <i class='bx bxl-twitter' ></i>
+      <i class='bx bxl-facebook' ></i>
+      <i class='bx bxl-tiktok' ></i>
+      <i class='bx bxl-instagram-alt' ></i>
+    </div>
+  </section>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="product.js"></script>
+  <script src="../app.js"></script>
+</body>
+</html> 

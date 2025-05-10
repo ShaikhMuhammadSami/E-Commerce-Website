@@ -1,0 +1,342 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../output.css" rel="stylesheet">
+  <link rel="stylesheet" href="../global.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+</head>
+<body class="m-0 p-0">
+  <!-- NavBar started -->
+  <header class="z-10 fixed bg-white w-full">
+    <div class=" flex justify-between items-center h-[85px] w-[90%] m-auto md:w-[85%] md:justify-between md:h-[90px] xl:justify-evenly xl:w-[85%]">
+      <img src="images/Logo.png" alt="website logo">
+  
+      <!-- Navbar List for mobile Start-->
+      <nav id="nav-list" class="fixed top-0 right-[-100%] w-[60%] bg-linear-to-b from-[#47437b] to-[#27212b] h-screen md:hidden">
+        <ul class="flex flex-col justify-center mt-2">
+          <i class='bx bx-x text-4xl cursor-pointer pl-10 text-white' onclick="closeMenu()"></i>
+          <li class="pb-7 pt-7 pl-10"><a class="text-[20px] text-white" href="products.html">Home</a></li>
+          <li class="pb-7 pt-7 pl-10"><a class="text-[20px] text-white" href="cart.html">Cart</a></li>
+          <li class="pb-7 pt-7 pl-10"><a class="text-[20px] text-white" href="#">Contact Us</a></li>
+          <li class="pb-7 pt-7 pl-10"><a class="text-[20px] text-white" href="#">Blog</a></li>
+        </ul>
+      </nav>
+
+      <div class="md:hidden">
+        <i id="menu-btn" class='bx bx-menu text-4xl cursor-pointer ' onclick="openMenu()"></i>
+      </div>
+      <!-- Navbar List for mobile End -->
+
+      <!-- Navbar List for larger Screens Starts -->
+
+      <div class="hidden md:block w-[35%] lg:w-[38%]">
+        <div class="flex items-center bg-gray-100 p-2 gap-2 rounded-[10px]">
+          <i class='bx bx-search text-2xl'></i>
+          <input class="w-full p-2 outline-none" type="search" placeholder="Search">
+        </div>
+      </div>
+      <nav class="hidden md:block">
+        <ul class="flex items-center gap-3 lg:gap-7">
+          <li><a href="#" class="">Home</a></li>
+          <li><a href="#" class="text-gray-400">About</a></li>
+          <li><a href="#" class="text-gray-400">Contact Us</a></li>
+          <li><a href="#" class="text-gray-400">Blog</a></li>
+        </ul>
+      </nav>
+      <div class="hidden md:block">
+        <a href=""><i class='bx bx-heart text-2xl xl:text-3xl text-gray-700 lg:mr-3'></i></a>
+        <a href="cart.html" class="relative"><i class='bx bx-cart-alt text-2xl xl:text-3xl text-gray-700 lg:mr-3' ><span class="relative top-[-25px] right-4 text-red-600 text-[16px] font-bold js-quantity">0</span></i></a>
+        <a href=""><i class='bx bx-user text-2xl xl:text-3xl text-gray-700'></i></a>
+      </div>
+    </div>
+    <!-- Navbar List for larger Screens Ends -->
+
+
+    <!-- Second Navbar for larger Screens started -->
+    <nav class="hidden md:block h-12 bg-[#2e2e2e]">
+      <ul class="w-[85%] m-auto flex justify-between items-center lg:w-[77%]">
+        <li class="text-[#98989c] flex items-center gap-2 h-12 cursor-pointer lg:text-[18px]"><i class='bx bxs-mobile'></i><p>phones</p></li>
+        <li class="text-[#98989c] flex items-center gap-2 h-12 cursor-pointer lg:text-[18px]"><i class='bx bx-desktop'></i><p>Comuters</p></li>
+        <li class="text-[#98989c] flex items-center gap-2 h-12 cursor-pointer lg:text-[18px]"><i class='bx bxs-watch-alt'></i><p>Smart Watches</p></li>
+        <li class="text-[#98989c] flex items-center gap-2 h-12 cursor-pointer lg:text-[18px]"><i class='bx bx-camera'></i><p>Cameras</p></li>
+        <li class="text-[#98989c] flex items-center gap-2 h-12 cursor-pointer lg:text-[18px]"><i class='bx bx-headphone'></i><p>HeadPhones</p></li>
+        <li class="text-[#98989c] flex items-center gap-2 h-12 cursor-pointer lg:text-[18px]"><i class='bx bx-joystick'></i><p>Gaming</p></li>
+      </ul>
+    </nav>
+    <!-- Second Navbar for larger Screens End -->
+  </header>
+  <!-- NavBar End -->
+
+  <!-- Main Hero Section Started -->
+  <main class="bg-linear-to-br from-[#211C24] to-[#221829] h-fit w-full pt-[150px]">
+    <section class="md:flex m-auto md:w-[95%] md:gap-7 lg:w-[90%]">
+      <div class="w-[90%] h-fit pt-24 pb-3 flex flex-col justify-end items-center gap-3 m-auto text-center md:pt-0 md:pb-10 md:items-baseline md:text-left md:pl-5 lg:gap-1.5 lg:w-[60%] lg:items-baseline lg:pl-7 xl:pl-24">
+        <p class="text-3xl text-[#89898a]">Pro.Beyond.</p>
+        <h1 class="text-white text-5xl lg:text-7xl lg:pb-5 xl:text-8xl font-extralight">Iphone 16 <span class="font-bold">Pro</span></h1>
+        <p class="text-[#89898a] mb-3">Created to change everything for the better. For everyone</p>
+        <button class="text-white w-[170px] border border-white h-12 rounded-[8px] hover:bg-red-600 transition duration-600">Shop Now</button>
+      </div>
+      <div class="w-[90%] m-auto flex justify-center lg:w-[40%]">
+        <div class="hero-section h-[450px] bg-cover w-[350px] md:h-[600px] md:w-[400px]"></div>
+      </div>
+    </section>
+  </main>
+  <!-- Main Hero Section End -->
+
+  <!-- Advertisement Section 1 for mobile -->
+  <section class="md:hidden">
+    <div class="grid product-container w-full">
+      <div class="min-h-[370px] flex flex-col justify-center items-center text-center gap-3 bg-[#EDEDED] pt-6 pb-6">
+        <img class="" src="images/airpod-img.png" alt="airpod-image">
+        <h2 class="text-3xl">Apple AirPods <span class="font-bold">Max</span></h2>
+        <p>Computational audio. Listen, it's powerful</p>
+      </div>
+      <div class="min-h-[370px] flex flex-col justify-center items-center text-center gap-3 bg-[#353535] text-white pt-6 pb-6">
+        <img class="" src="images/vision-pro-img.png" alt="vision-pro">
+        <h2 class="text-3xl">Apple Vision <span class="font-bold">Pro</span></h2>
+        <p>An immersive way to experience entertainment</p>
+      </div>
+      <div class="min-h-[370px] flex flex-col justify-center items-center text-center gap-3 bg-[#FFFFFF] pt-6 pb-6">
+        <img class="" src="images/PlayStation.png" alt="PlayStation">
+        <h2 class="text-3xl">Playstation <span class="font-bold">5</span></h2>
+        <p class="w-[80%] m-auto">Incredibly powerful CPUs, GPUs, and an SSD with integrated I/O will redefine your PlayStation experience.</p>
+      </div>
+      <div class="min-h-[370px] flex flex-col justify-center items-center text-center gap-3 bg-[#EDEDED] pt-6 pb-6">
+        <img class="" src="images/MacBook-Pro-14.png" alt="MacBook-Pro-14">
+        <h2 class="text-3xl">Macbook <span class="font-bold">Air</span></h2>
+        <p class="w-[80%] m-auto">The new 15-inch MacBook Air makes room for more of what you love with a spacious Liquid Retina display.</p>
+        <button class="w-[80%] border border-black p-2 mt-2 rounded-[8px] font-bold hover:bg-red-600">Shop Now</button>
+      </div>
+    </div>
+  </section> 
+  <!-- Advertisement Section 1 Ends mobile -->
+
+  <!-- Advertisement Section 1 for big screens starts -->
+  <section class="hidden md:block">
+    <div class="w-full flex">
+      <div class="w-[60%] lg:w-[50%]">
+        <div class="flex justify-center items-center bg-white h-[290px] lg:gap-10 xl:h-[340px] xl:gap-14">
+          <img class="h-[270px] mt-5 xl:h-[320px]" src="images/PlayStation (3).PNG" alt="PlayStation">
+          <div class="flex flex-col gap-2">
+            <h2 class="text-3xl font-semibold lg:text-4xl xl:text-5xl">Playstation 5</h2>
+            <p class="w-[80%] text-[13px] lg:text-[16px]">Incredibly powerful CPUs, GPUs, and an SSD with integrated I/O will redefine your PlayStation experience.</p>
+          </div>
+        </div>
+        <div class="flex h-[30vh] xl:h-[40vh]">
+          <div class="bg-[#EDEDED] flex justify-center items-center gap-8 xl:gap-12">
+            <img class="h-[230px] md:h-[180px] lg:h-[160px] xl:h-[270px]" src="images/airpods-img.png" alt="airpod-image">
+            <div class="pr-3">
+              <h2 class="text-2xl xl:text-3xl">Apple AirPods <span class="font-bold">Max</span></h2>
+              <p class="w-[80%] text-[13px] lg:text-[14px] xl:text-[18px]">Computational audio. Listen, it's powerful</p>
+            </div>
+          </div>
+          <div class="bg-[#353535] text-white flex justify-center items-center xl:gap-12">
+            <img src="images/vision-pro-large-screen.png" alt="vision-pro">
+            <div class="pr-3">
+              <h2 class="text-2xl xl:text-3xl">Apple Vision <span class="font-bold">Pro</span></h2>
+              <p class="w-[80%] text-[13px] text-[#89898a] lg:text-[14px] xl:text-[18px]">An immersive way to experience entertainment</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Second part -->
+      <div class="w-[40%] flex justify-center items-center bg-[#EDEDED] pl-10 lg:w-[50%] xl:pl-16">
+        <div>
+          <h2 class="text-3xl lg:text-4xl mb-2 xl:text-6xl font-extralight">Macbook <span class="font-bold">Air</span></h2>
+          <p class="w-[80%] text-[13px] lg:text-[18px]">The new 15-inch MacBook Air makes room for more of what you love with a spacious Liquid Retina display.</p>
+          <button class="w-[50%] border border-black p-2 mt-2 rounded-[8px] font-bold hover:bg-red-600 hover:text-white transition duration-500">Shop Now</button>
+        </div>
+        <div class="w-full">
+          <img class="h-[400px]  lg:h-[450px] xl:h-[550px]" src="images/MacBook-Pro-14 (1).png" alt="MacBook-Pro-14">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Advertisement Section 1 for big screens Ends -->
+
+
+  <!-- Category Section starts -->
+  <section class="mt-16 mb-20 w-[90%] m-auto md:w-[80%]">
+    <div class="flex justify-between items-center">
+      <h2 class="text-[20px] font-semibold sm:text-2xl">Browse by Category</h2>
+      <div>
+        <i class='bx bx-chevron-left text-5xl'></i>
+        <i class='bx bx-chevron-right text-5xl'></i>
+      </div>
+    </div>
+    <!-- Category -->
+    <div class="pt-10 grid grid-cols-2 justify-items-center gap-5 md:grid-cols-3 lg:grid-cols-6">
+      <div class="h-[150px] w-[100%] rounded-[8px] bg-[#EDEDED] flex flex-col gap-2.5 justify-center items-center">
+        <img src="images/Phones.png" alt="Phone-image">
+        <p>HeadPhones</p>
+      </div>
+      <div class="h-[150px] w-[100%] rounded-[8px] bg-[#EDEDED] flex flex-col gap-2.5 justify-center items-center">
+        <img src="images/Smart Watches.png" alt="Smart-Watches">
+        <p>Smart Watches</p>
+      </div>
+      <div class="h-[150px] w-[100%] rounded-[8px] bg-[#EDEDED] flex flex-col gap-2.5 justify-center items-center">
+        <img src="images/Cameras.png" alt="Camras">
+        <p>Camra</p>
+      </div>
+      <div class="h-[150px] w-[100%] rounded-[8px] bg-[#EDEDED] flex flex-col gap-2.5 justify-center items-center">
+        <img src="images/Headphones.png" alt="Headphones">
+        <p>HeadPhones</p>
+      </div>
+      <div class="h-[150px] w-[100%] rounded-[8px] bg-[#EDEDED] flex flex-col gap-2.5 justify-center items-center">
+        <img src="images/Computers.png" alt="Computers">
+        <p>Computers</p>
+      </div>
+      <div class="h-[150px] w-[100%] rounded-[8px] bg-[#EDEDED] flex flex-col gap-2.5 justify-center items-center">
+        <img src="images/Gaming.png" alt="Gaming">
+        <p>Gaming</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Category Section Ends -->
+
+
+  <!-- Products Section Starts -->
+  <section class="mb-10">
+    <div class="flex w-[90%] m-auto gap-4 justify-between md:justify-start md:w-[80%] text-center md:gap-10">
+      <p class="underline font-bold cursor-pointer">New Arrival</p>
+      <p class="text-[#89898a] hover:text-black hover:underline hover:font-bold cursor-pointer">Best Sellers</p>
+      <p class="text-[#89898a] hover:text-black hover:underline hover:font-bold cursor-pointer">Featured Products</p>
+    </div>
+  </section>
+  <!-- Products Section Ends -->
+
+  <section class="js-product-sec w-[90%] h-auto m-auto grid grid-cols-2 justify-center items-center gap-[20px] md:grid-cols-4 md:w-[80%]">
+  </section>  
+
+
+
+  <!---------------  Special Products -------------------->
+  <section class="mt-24">
+    <div class="flex overflow-x-auto items-center md:overflow-hidden md:gap-0 md:p-0">
+      <!-- Product 1 -->
+      <div class="shrink-0 w-[100%] md:w-[25%] bg-[#F9F9F9] py-10">
+        <div class="flex justify-center items-center">
+          <img class="mx-auto h-[250px] md:h-[250px]" src="images/ipad-pro.png" alt="Ipad Pro" />
+        </div>
+        <div class="text-center mt-8">
+          <h2 class="text-4xl mb-4">iPad Pro</h2>
+          <p class="w-[90%] m-auto text-[#909090]">iPad combines a magnificent 10.2-inch Retina display, incredible performance, multitasking and ease of use.</p>
+        </div>
+        <div class="w-full flex justify-center mt-5">
+          <button class="border border-black w-[70%] py-2.5 rounded-[6px] hover:bg-amber-500 transition duration-200 hover:text-white">Shop Now</button>
+        </div>
+      </div>
+  
+      <!-- Product 2 -->
+
+      <div class="shrink-0 w-[100%] md:w-[25%] bg-[#F9F9F9] py-10">
+        <div class="flex justify-center items-center">
+          <img  class="mx-auto h-[250px] md:h-[250px]" src="images/Big Banner.png" alt="Ipad Pro" />
+        </div>
+        <div class="text-center mt-8">
+          <h2 class="text-4xl mb-4">iPad Pro</h2>
+          <p class="w-[90%] m-auto text-[#909090]">iPad combines a magnificent 10.2-inch Retina display, incredible performance, multitasking and ease of use.</p>
+        </div>
+        <div class="w-full flex justify-center mt-5">
+          <button class="border border-black w-[70%] py-2.5 rounded-[6px] hover:bg-amber-500 transition duration-200 hover:text-white cursor-pointer">Shop Now</button>
+        </div>
+      </div>
+      <!-- Product 3 -->
+      <div class="shrink-0 w-[100%] md:w-[25%] bg-[#EAEAEA] py-10">
+        <div class="flex justify-center items-center">
+          <img  class="mx-auto h-[250px] md:h-[250px]" src="images/samsung-gal.png" alt="Ipad Pro" />
+        </div>
+        <div class="text-center mt-8">
+          <h2 class="text-4xl mb-4">iPad Pro</h2>
+          <p class="w-[90%] m-auto text-[#909090]">iPad combines a magnificent 10.2-inch Retina display, incredible performance, multitasking and ease of use.</p>
+        </div>
+        <div class="w-full flex justify-center mt-5">
+          <button class="border border-black w-[70%] py-2.5 rounded-[6px] hover:bg-amber-500 transition duration-200 hover:text-white cursor-pointer">Shop Now</button>
+        </div>
+      </div>
+
+      <!-- Product 4 -->
+      <div class="shrink-0 w-[100%] md:w-[25%] bg-[#2C2C2C] py-10">
+        <div class="flex justify-center items-center">
+          <img class=" mx-auto h-[250px] md:h-[250px] md:w-[100%] relative md:left-[20%] hidden md:block" src="images/Macbook 1 (5).png" alt="Ipad Pro" />
+          <img class="mx-auto h-[250px] md:h-[250px] md:w-[100%] block md:hidden" src="images/MacBook-Pro-14.png" alt="Ipad Pro" />
+        </div>
+        <div class="text-center mt-8">
+          <h2 class="text-4xl mb-4 text-white">iPad Pro</h2>
+          <p class="w-[90%] m-auto text-[#909090]">iPad combines a magnificent 10.2-inch Retina display, incredible performance, multitasking and ease of use.</p>
+        </div>
+        <div class="w-full flex justify-center mt-5">
+          <button class="border border-white w-[70%] py-2.5 rounded-[6px] text-white hover:bg-amber-500 transition duration-200 hover:text-white cursor-pointer">Shop Now</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!---------------  Special Products -------------------->
+
+
+  <section class="mt-16 w-full m-auto">
+    <div class="hidden md:block md:h-[30vh] lg:h-[40vh] xl:h-[50vh] 2xl:h-[60vh] bg-no-repeat w-full" id="footerBgImage">
+      <div class="w-[90%] text-center flex m-auto flex-col justify-center items-center h-full">
+        <h2 class="text-6xl lg:text-7xl xl:text-8xl text-white font-extralight pb-3">Big Summer <span class="font-normal">Sale</span></h2>
+        <p class="text-[#787878]">Commodo fames vitae vitae leo mauris in. Eu consequat.</p>
+        <a href="#"><button class="w-[150px] text-white border border-white py-2 mt-6 rounded-[8px] cursor-pointer">Shop Now</button></a>
+      </div>
+    </div>
+    <div class="block md:hidden h-[40vh]" id="ftrSmlScrImg">
+      <div class="w-[90%] text-center flex m-auto flex-col justify-center items-center h-full">
+        <h2 class="text-5xl text-white font-extralight pb-3">Big Summer <span class="font-normal">Sale</span></h2>
+        <p class="text-[#787878]">Commodo fames vitae vitae leo mauris in. Eu consequat.</p>
+        <a href="#"><button class="w-[150px] text-white border border-white py-2 mt-6 rounded-[8px] cursor-pointer">Shop Now</button></a>
+      </div>
+    </div>
+  </section>
+
+
+  <!------------------------------  Footer Section Sarts ---------------------------- -->
+  <section class="bg-[#000000] py-16 lg:py-28">
+    <div class="w-[90%] md:w-[80%] xl:w-[75%] m-auto grid grid-cols-1 justify-items-center md:grid-cols-3 gap-10">
+      <div class="text-center flex flex-col justify-center items-center md:items-start md:justify-start md:pt-1.5 md:text-start">
+        <img class="mb-5" src="images/footer-logo.png" alt="Logo image">
+        <p class="text-[#dfdfdf]">We are a residential interior design firm located in Portland. Our boutique-studio offers more than</p>
+      </div>
+      <div class="text-center md:text-start">
+        <ul class="text-white text-sm/9">
+          <li><a class="text-white text-[18px] font-bold" href="#">Services</a></li>
+          <li><a class="text-[#CFCFCF]" href="#">Bonus program</a></li>
+          <li><a class="text-[#CFCFCF]" href="#">Gift cars</a></li>
+          <li><a class="text-[#CFCFCF]" href="#">Credit and payment</a></li>
+          <li><a class="text-[#CFCFCF]" href="#">Service contracts</a></li>
+          <li><a class="text-[#CFCFCF]" href="#">No-cash account</a></li>
+          <li><a class="text-[#CFCFCF]" href="#">Payment</a></li>
+        </ul>
+      </div>
+      <div class="text-center md:text-start">
+        <ul class="text-white text-sm/9">
+          <li><a class="text-white text-[16px] font-bold" href="#">Assistance to the buyer</a></li>
+          <li><a class="text-[#CFCFCF]" href="#">Find an order</a></li>
+          <li><a class="text-[#CFCFCF]" href="#">Terms of delivery</a></li>
+          <li><a class="text-[#CFCFCF]" href="#">Exchange and return of goods</a></li>
+          <li><a class="text-[#CFCFCF]" href="#">Guarantee</a></li>
+          <li><a class="text-[#CFCFCF]" href="#">Frequently asked questions</a></li>
+          <li><a class="text-[#CFCFCF]" href="#">Terms of use of the site</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="w-[90%] m-auto md:w-[80%] xl:w-[75%] text-white mt-5 flex justify-center items-center md: gap-5 text-2xl md:justify-start">
+      <i class='bx bxl-twitter' ></i>
+      <i class='bx bxl-facebook' ></i>
+      <i class='bx bxl-tiktok' ></i>
+      <i class='bx bxl-instagram-alt' ></i>
+    </div>
+  </section>
+  <!------------------------------  Footer Section Ends ---------------------------- -->
+<a href="images/z-fold.png"></a>
+
+  <script src="product.js"></script>
+  <script src="../app.js"></script>
+</body>
+</html>

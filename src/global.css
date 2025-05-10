@@ -1,0 +1,161 @@
+.backgroundImage {
+    background-image: url('https://img.freepik.com/premium-vector/abstract-white-gold-banner-background-vector-illustration_249611-5472.jpg');
+  }
+  
+.bodyBgImage {
+    background-image: url('images/Rectangle.png');
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40vh;
+  }
+
+
+.animation{
+    transform: scale(0.2);
+    animation: popUp 1s ease forwards;
+    transition: 1s;
+}
+
+@keyframes popUp {
+    0% {
+      transform: scale(0.2);
+      opacity: 0;
+    }
+    80% {
+      transform: scale(1.05);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  
+.slide-in{
+  animation: slideIn 0.5s forwards;
+}
+
+.slide-out {
+  animation: slideOut 0.5s forwards;
+}
+
+
+@keyframes slideIn {
+  from {
+    right: -100%;
+  }
+  to {
+    right: 0;
+  }
+}
+
+@keyframes slideOut {
+  from {
+    right: 0;
+  }
+  to {
+    right: -100%;
+  }
+}
+
+
+/* Hero Section bg Image */
+.hero-section{
+  background-image: url('products/images/Iphone-Image.png');
+  background-repeat: no-repeat;
+}
+
+/* ////////////////  Product page 1 //////////// */
+
+
+
+/* ////////////////  Product page 2 //////////// */
+
+.product-container1{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #F6F6F6;
+  padding: 20px 3px;
+  min-height: 280px;
+}
+.product-container1 .image{
+  height: 100px;
+  width: fit-content;
+}
+
+.product-name {
+  font-size: 16px;
+  margin: 15px 0px;
+  display: -webkit-box;
+  display: box; 
+  line-clamp: 2; 
+  -webkit-line-clamp: 2; 
+  -webkit-box-orient: vertical;
+  box-orient: vertical; 
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1.4;
+  max-height: calc(2em * 2);
+  width: 90%;
+  margin: 10px auto;
+  text-align: center;
+}
+
+.price{
+  font-weight: bold;
+}
+
+.btn{
+  width: 120px;
+  height: 40px;
+  margin-top: 10px;
+  border-radius: 8px;
+  background-color: black;
+  color: white;
+  transition: 0.3s ease-in-out;
+}
+
+.btn:hover{
+  background-color: rgb(0, 136, 255);
+}
+
+.heart-icon {
+  font-size: 20px;
+  cursor: pointer;
+  width: 80%;
+  text-align: right;
+  color: #b8b8b8;
+  font-size: 25px;
+  margin-bottom: 0px;
+}
+
+.favorite-item{
+  color: #ffdd00;
+}
+
+
+@media (min-width:768px) {
+  .product-container1 .image{
+    height: 120px;
+    width: fit-content;
+  }
+}
+
+
+#footerBgImage {
+  background-image: url('products/images/Banner\ 2\ \(3\).png');
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+#ftrSmlScrImg{
+  background-image: url('products/images/Banner\ 2.png');
+  width: 100%;
+  background-size: cover;
+}
+

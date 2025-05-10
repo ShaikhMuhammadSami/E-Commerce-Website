@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <link rel="stylesheet" href="global.css">
+</head>
+<body class="bodyBgImage">
+    <!------------------------------------    Singup Section -------------------------------------------->
+    <div class="js-signup-container">
+        <div class="flex justify-between w-[90%] m-auto mt-7">
+            <img class="h-auto" src="products/images/Logo.png" alt="logo">
+            <button class="border border-black w-[150px] h-[40px] cursor-pointer hover:bg-black hover:text-white transition duration-300" onclick="loginSwitch()">Log in</button>
+        </div>
+        <!-- Form Container -->
+        <div class="w-full flex justify-center items-center h-[88vh]">
+            <div class="bg-white max-w-md w-[85%] sm:w-full p-5 lg:p-8 rounded shadow-xl">
+                <h2 class="text-2xl font-bold text-center">Sign up to Cyber</h2>
+                <p class="text-center text-sm text-gray-500 mt-1 mb-6">Fast & safe shopping for phones, earbuds, cameras, and more!</p>
+          
+                <form class="">
+                    <label class="text-xs font-semibold text-gray-700 block border border-gray-300 px-3 py-2 ">
+                        <p class="mb-2">FIRST NAME</p>
+                        <input type="text" placeholder="John" class="w-full text-sm outline-none js-signup-text" />
+                    </label>
+                    <label class="text-xs font-semibold text-gray-700 block border border-gray-300 px-3 py-2">
+                        <p class="mb-2">EMAIL ADDRESS</p>
+                        <input type="email" placeholder="johndoe@example.com" class="w-full text-sm outline-none js-signup-email" />
+                    </label>
+                    <label class="text-xs font-semibold text-gray-700 block border border-gray-300 px-3 py-2 ">
+                        <p class="mb-2">PASSWORD</p>
+                        <input type="password" placeholder="********" class="w-full text-sm outline-none js-signup-pass-1" />
+                    </label>
+                    <div class="flex items-center my-5">
+                        <input type="checkbox" class="border-gray-300 mr-3" id="termsAndConditions"/>
+                        <label class="text-xs text-gray-600">I agree to the <span class="underline cursor-pointer">Terms of Service</span> and <span class="underline cursor-pointer">Privacy Policy</span>.</label>
+                    </div>
+                </form>
+                <button class="w-full bg-black text-white py-2 font-semibold text-sm hover:opacity-90 transition cursor-pointer" onclick="singup()">CREATE AN ACCOUNT</button>
+          
+                <div class="flex items-center my-6">
+                    <div class="flex-grow border-t border-gray-300"></div>
+                    <span class="mx-4 text-gray-500 text-sm">OR</span>
+                    <div class="flex-grow border-t border-gray-300"></div>
+                </div>
+          
+                <div class="flex justify-center space-x-6">
+                    <img class="h-[30px] cursor-pointer" src="images/google-image.png" alt="google image" >
+                    <img class="h-[30px] rounded-full cursor-pointer" src="images/apple-image.jpeg" alt="apple image" >
+                    <img class="h-[30px] rounded-full cursor-pointer" src="images/facebook-image.jpeg" alt="google image" >
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-------------------------------------------- Login Section -------------------------------------->
+    <section class="hidden js-login-container">
+        <div class="flex justify-between w-[90%] m-auto mt-7">
+            <img class="h-auto" src="products/images/Logo.png" alt="logo">
+            <button class="border border-black w-[150px] h-[40px] cursor-pointer hover:bg-black hover:text-white transition duration-300" onclick="signupSwitch()">Sign up</button>
+        </div>
+        <!-- Form Container -->
+        <div class="w-full flex justify-center items-center h-[88vh]">
+            <div class="bg-white max-w-md w-[85%] sm:w-full p-5 lg:p-8 rounded shadow-xl">
+                <h2 class="text-2xl font-bold text-center">Log in to Cyber</h2>
+                <p class="text-center text-sm text-gray-500 mt-1 mb-6">Fast & safe shopping for phones, earbuds, cameras, and more!</p>
+          
+                <form>
+                    <label class="text-xs font-semibold text-gray-700 block border border-gray-300 px-3 py-2">
+                        <p class="mb-2">EMAIL ADDRESS</p>
+                        <input type="email" placeholder="johndoe@example.com" class="w-full text-sm outline-none js-login-email" />
+                    </label>
+                    <label class="text-xs font-semibold text-gray-700 block border border-gray-300 px-3 py-2 ">
+                        <p class="mb-2">PASSWORD</p>
+                        <input type="password" placeholder="********" class="w-full text-sm outline-none js-login-pass" />
+                    </label>
+                    <div class="flex items-center justify-between my-5">
+                        <div class="flex items-center">
+                            <input type="checkbox" class="border-gray-300 mr-3" />
+                            <p class="text-[#757575] underline">Remember Me</p>
+                        </div>
+                        <p class="text-[#757575] underline">Forget Password?</p>
+                    </div>
+            
+                </form>
+                <button class="w-full bg-black text-white py-2 font-semibold text-sm hover:opacity-90 transition cursor-pointer" onclick="login()">PROCEED</button>
+          
+                <div class="flex items-center my-6">
+                    <div class="flex-grow border-t border-gray-300"></div>
+                    <span class="mx-4 text-gray-500 text-sm">OR</span>
+                    <div class="flex-grow border-t border-gray-300"></div>
+                </div>
+          
+                <div class="flex justify-center space-x-6">
+                    <img class="h-[30px] cursor-pointer" src="images/google-image.png" alt="google image" >
+                    <img class="h-[30px] rounded-full cursor-pointer" src="./images/apple-image.jpeg" alt="apple image" >
+                    <img class="h-[30px] rounded-full cursor-pointer" src="images/facebook-image.jpeg" alt="google image" >
+                </div>
+            </div>
+    </section>
+      
+    <!-- Footer -->
+    <div class="absolute bottom-2 text-center w-full text-xs text-gray-500">
+        &copy; 2025 - QISE All Rights Reserved. Cyber
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="app.js"></script>
+</body>
+</html>
